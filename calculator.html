@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator Peoject</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+
+		}
+
+		body{
+			height: 100vh;
+			width: 100%;
+			background: crimson;
+            padding: 100px 0;
+
+		}
+
+		.main-box{
+			width: 400px;
+			background: #fff;
+			margin: auto;
+			padding: 32px;
+			border-radius: 8px;
+
+		}
+
+		.display{
+			width: 100%;
+			padding: 16px;
+			font-size: 18px;
+
+		}
+
+		.buttons{
+			display: grid;
+			grid-template-columns: auto auto auto auto;
+			grid-row-gap: 12px;
+			grid-column-gap: 12px;
+
+		}
+
+		.buttons button{
+			background: black;
+			color: white;
+			border: none;
+			border-radius: 8px;
+			padding: 8px;
+
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="main-box">
+		<form class="calculator" name="form_body">
+			<!-- display -->
+			<input type="text" name="result" class="display"><br><br>
+
+			<!-- buttons -->
+			<div class="buttons">
+			   <button type="button" name="" value="9" onclick="form_body.result.value+='9'">9</button>
+			   <button type="button" name="" value="8" onclick="form_body.result.value+='8'">8</button>
+			   <button type="button" name="" value="7" onclick="form_body.result.value+='7'">7</button>
+			   <button type="button" name="" value="/" onclick="form_body.result.value+='/'">/</button>
+			   <button type="button" name="" value="6" onclick="form_body.result.value+='6'">6</button>
+			   <button type="button" name="" value="5" onclick="form_body.result.value+='5'">5</button>
+			   <button type="button" name="" value="4" onclick="form_body.result.value+='4'">4</button>
+			   <button type="button" name="" value="*" onclick="form_body.result.value+='*'">*</button>
+			   <button type="button" name="" value="3" onclick="form_body.result.value+='3'">3</button>
+			   <button type="button" name="" value="2" onclick="form_body.result.value+='2'">2</button>
+			   <button type="button" name="" value="1" onclick="form_body.result.value+='1'">1</button>
+			   <button type="button" name="" value="-" onclick="form_body.result.value+='-'">-</button>
+			   <button type="button" name="" value="C" onclick="form_body.result.value=''">C</button>
+			   <button type="button" name="" value="0" onclick="form_body.result.value+='0'">0</button>
+			   <button type="button" name="" value="=" onclick="form_body.result.value=eval(form_body.result.value)">=</button>
+			   <button type="button" name="" value="+" onclick="form_body.result.value+='+'">+</button>
+			</div>
+		</form>
+	</div>
+</div>
+<script>
+	
+</script>
+</body>
+</html>
